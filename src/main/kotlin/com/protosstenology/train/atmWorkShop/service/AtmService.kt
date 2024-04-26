@@ -201,7 +201,7 @@ class AtmService {
 
             repository.saveAndFlush(data)
 
-            return mapOf("status" to false, "messages" to "แก้ไขสำเร็จ", "data" to data)
+            return mapOf("status" to true, "messages" to "แก้ไขสำเร็จ", "data" to data)
 
         }
         return mapOf("status" to false, "messages" to "แก้ไขไม่สำเร็จ")
