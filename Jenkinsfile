@@ -9,7 +9,7 @@ node {
             branch:'master'
         }
         stage('Build Docker'){
-            dockerImageTag = docker.build("atm-kotlin-basic:${env.BUILD_NUMBER}")
+            dockerImage = docker.build("atm-kotlin-basic:${env.BUILD_NUMBER}")
         }
       stage('Deploy docker'){
          echo "Docker Image Tag Name: ${dockerImageTag}"
