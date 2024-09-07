@@ -15,4 +15,4 @@ RUN chmod g+w /opt/app-root
 COPY --from=builder /home/gradle/build/container .
 EXPOSE 8088
 
-ENTRYPOINT ["java", "-jar", "ats-oms-service.jar"]
+ENTRYPOINT ["java", "-jar", "atm-kotlin-basic.jar"]
