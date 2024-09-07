@@ -24,7 +24,7 @@ class AtmController {
 //    fun getAtm()
 
     @PostMapping("/createAcount")
-    fun createAccount(@RequestBody newAccount : Account) : ResponseEntity<Map<String, Any>>{
+    fun createAccou(@RequestBody newAccount : Account) : ResponseEntity<Map<String, Any>>{
 
         return  ResponseEntity.ok().body(atmService.createAccount(newAccount))
     }
